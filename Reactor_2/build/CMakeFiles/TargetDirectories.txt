@@ -1,0 +1,3 @@
+/home/jmx/project/Jedis/Reactor/build/CMakeFiles/edit_cache.dir
+/home/jmx/project/Jedis/Reactor/build/CMakeFiles/rebuild_cache.dir
+/home/jmx/project/Jedis/Reactor/build/CMakeFiles/testEventLoop.dir

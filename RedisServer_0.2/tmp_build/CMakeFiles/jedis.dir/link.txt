@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/jedis.dir/jedis.cc.o CMakeFiles/jedis.dir/Socket.cc.o CMakeFiles/jedis.dir/home/jmx/project/Jedis/Log/easylogging++.cc.o  -o ../bin/jedis 

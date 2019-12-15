@@ -14,23 +14,46 @@ class EventLoop;
 class FileEvent;
 using FileEventPtr = std::shared_ptr<FileEvent>;
 
-class FileEvent : boost::noncopyable
+class FileEvent 
+: boost::noncopyable
+, public std::enable_shared_from_this<FileEvent>
+
 {
+  friend class EventLoop;
   using Callback = std::function<void(int)>;
 public:
-  FileEvent(int fd);
+  FileEvent(EventLoop *loop, int fd);
 
   void RegisterReadHandler(Callback cb);
   void RegisterWriteHandler(Callback cb);
-  void HandleRead(int connfd)
+
+  void EnableReading();
+  void EnableWriting();
+
+  bool IsReading()
+  {
+    return mask_ & AE_READABLE;
+  }
+
+  bool IsWriting()
+  {
+    return mask_ & AE_WRITABLE;
+  }
+
+  void DisableReading();
+
+  void DisableWriting();
+
+private:
+  void HandleRead(int fd)
   {
     if(readHandler_)
-      readHandler_(connfd);
+      readHandler_(fd);
   }
-  void HandleWrite(int connfd)
+  void HandleWrite(int fd)
   {
     if(writeHandler_)
-      writeHandler_(connfd);
+      writeHandler_(fd);
   }
 
   int FD() const { return fd_; }
@@ -38,13 +61,12 @@ public:
   int Mask() const { return mask_; }
   int RMask() const { return rmask_; }
 private:
-  EventLoop * loop_;
-
   const int fd_;
   int mask_;
   int rmask_;
   Callback readHandler_;
   Callback writeHandler_;
+  EventLoop *loop_;
 };
 
 struct FiredEvent

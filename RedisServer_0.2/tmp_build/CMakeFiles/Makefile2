@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/jmx/project/Jedis/RedisServer_0.2
 CMAKE_BINARY_DIR = /home/jmx/project/Jedis/RedisServer_0.2/tmp_build
 
 #=============================================================================
-# Target rules for target CMakeFiles/jedis.dir
+# Target rules for target CMakeFiles/testEventLoop.dir
 
 # All Build rule for target.
-CMakeFiles/jedis.dir/all:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/depend
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jmx/project/Jedis/RedisServer_0.2/tmp_build/CMakeFiles --progress-num=1,2,3,4 "Built target jedis"
-.PHONY : CMakeFiles/jedis.dir/all
+CMakeFiles/testEventLoop.dir/all:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/depend
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jmx/project/Jedis/RedisServer_0.2/tmp_build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target testEventLoop"
+.PHONY : CMakeFiles/testEventLoop.dir/all
 
 # Include target in all.
-all: CMakeFiles/jedis.dir/all
+all: CMakeFiles/testEventLoop.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/jedis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jmx/project/Jedis/RedisServer_0.2/tmp_build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/jedis.dir/all
+CMakeFiles/testEventLoop.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jmx/project/Jedis/RedisServer_0.2/tmp_build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testEventLoop.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jmx/project/Jedis/RedisServer_0.2/tmp_build/CMakeFiles 0
-.PHONY : CMakeFiles/jedis.dir/rule
+.PHONY : CMakeFiles/testEventLoop.dir/rule
 
 # Convenience name for target.
-jedis: CMakeFiles/jedis.dir/rule
+testEventLoop: CMakeFiles/testEventLoop.dir/rule
 
-.PHONY : jedis
-
-# clean rule for target.
-CMakeFiles/jedis.dir/clean:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/clean
-.PHONY : CMakeFiles/jedis.dir/clean
+.PHONY : testEventLoop
 
 # clean rule for target.
-clean: CMakeFiles/jedis.dir/clean
+CMakeFiles/testEventLoop.dir/clean:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/clean
+.PHONY : CMakeFiles/testEventLoop.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/testEventLoop.dir/clean
 
 .PHONY : clean
 

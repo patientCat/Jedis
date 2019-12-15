@@ -25,7 +25,7 @@ EventLoop::RegisterFileEvent(shared_ptr<FileEvent> fileEventPtr)
   }
 
   fileEvents_[fd] = fileEventPtr;
-  int ret = poller_->UpdateEvent(fd, fileEventPtr->Mask());
+  int ret = poller_->UpdateEvent(fd, fileEventPtr->RMask());
   if(ret != 0)
     cout << "注册事件失败" << endl;
   else

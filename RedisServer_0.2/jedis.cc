@@ -1,13 +1,9 @@
 //c++ program
 //design by >^.^<
 //@date    2019-12-03 06:45:14
-#include "Socket.hh"
-#include "EventLoop.cc"
 #include "../Log/easylogging++.h"
-
+#include "Socket.hh"
 #include <stdio.h>
-
-
 #include <iostream>
 #include <vector>
 #include <string>
@@ -17,7 +13,11 @@ using namespace std;
 
 INITIALIZE_EASYLOGGINGPP
 
-EventLoop loop;
+class Server
+{
+public:
+private:
+};
 void parser(char *buff, int maxLen)
 {
   const char *crlf = "\r\n";
@@ -50,16 +50,4 @@ void onAccept(int fd)
 }
 int main()
 {
-  Socket listenSocket(Socket::CreateNonBlockTCPSocket());
-  SocketAddr addr("127.0.0.1:8888"); 
-  // listen
-  Socket::SetReuseAddr(listenSocket.FD());
-  Socket::Bind(listenSocket.FD(), addr);
-  Socket::Listen(listenSocket.FD());
-  LOG(INFO) << "listening 127.0.0.1:8888";
-
-  FileEventPtr eventPtr = make_shared<FileEvent>(listenSocket.FD());
-  eventPtr->RegisterReadHandler(onAccept);
-  loop.RegisterFileEvent(eventPtr);
-  loop.Loop();
 }

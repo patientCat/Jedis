@@ -111,17 +111,98 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named jedis
+# Target rules for targets named testEventLoop
 
 # Build rule for target.
-jedis: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 jedis
-.PHONY : jedis
+testEventLoop: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testEventLoop
+.PHONY : testEventLoop
 
 # fast build rule for target.
-jedis/fast:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/build
-.PHONY : jedis/fast
+testEventLoop/fast:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/build
+.PHONY : testEventLoop/fast
+
+Event.o: Event.cc.o
+
+.PHONY : Event.o
+
+# target to build an object file
+Event.cc.o:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/Event.cc.o
+.PHONY : Event.cc.o
+
+Event.i: Event.cc.i
+
+.PHONY : Event.i
+
+# target to preprocess a source file
+Event.cc.i:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/Event.cc.i
+.PHONY : Event.cc.i
+
+Event.s: Event.cc.s
+
+.PHONY : Event.s
+
+# target to generate assembly for a file
+Event.cc.s:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/Event.cc.s
+.PHONY : Event.cc.s
+
+EventLoop.o: EventLoop.cc.o
+
+.PHONY : EventLoop.o
+
+# target to build an object file
+EventLoop.cc.o:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/EventLoop.cc.o
+.PHONY : EventLoop.cc.o
+
+EventLoop.i: EventLoop.cc.i
+
+.PHONY : EventLoop.i
+
+# target to preprocess a source file
+EventLoop.cc.i:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/EventLoop.cc.i
+.PHONY : EventLoop.cc.i
+
+EventLoop.s: EventLoop.cc.s
+
+.PHONY : EventLoop.s
+
+# target to generate assembly for a file
+EventLoop.cc.s:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/EventLoop.cc.s
+.PHONY : EventLoop.cc.s
+
+Poller.o: Poller.cc.o
+
+.PHONY : Poller.o
+
+# target to build an object file
+Poller.cc.o:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/Poller.cc.o
+.PHONY : Poller.cc.o
+
+Poller.i: Poller.cc.i
+
+.PHONY : Poller.i
+
+# target to preprocess a source file
+Poller.cc.i:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/Poller.cc.i
+.PHONY : Poller.cc.i
+
+Poller.s: Poller.cc.s
+
+.PHONY : Poller.s
+
+# target to generate assembly for a file
+Poller.cc.s:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/Poller.cc.s
+.PHONY : Poller.cc.s
 
 Socket.o: Socket.cc.o
 
@@ -129,7 +210,7 @@ Socket.o: Socket.cc.o
 
 # target to build an object file
 Socket.cc.o:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/Socket.cc.o
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/Socket.cc.o
 .PHONY : Socket.cc.o
 
 Socket.i: Socket.cc.i
@@ -138,7 +219,7 @@ Socket.i: Socket.cc.i
 
 # target to preprocess a source file
 Socket.cc.i:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/Socket.cc.i
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/Socket.cc.i
 .PHONY : Socket.cc.i
 
 Socket.s: Socket.cc.s
@@ -147,62 +228,35 @@ Socket.s: Socket.cc.s
 
 # target to generate assembly for a file
 Socket.cc.s:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/Socket.cc.s
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/Socket.cc.s
 .PHONY : Socket.cc.s
 
-home/jmx/project/Jedis/Log/easylogging++.o: home/jmx/project/Jedis/Log/easylogging++.cc.o
+testEventLoop.o: testEventLoop.cc.o
 
-.PHONY : home/jmx/project/Jedis/Log/easylogging++.o
-
-# target to build an object file
-home/jmx/project/Jedis/Log/easylogging++.cc.o:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/home/jmx/project/Jedis/Log/easylogging++.cc.o
-.PHONY : home/jmx/project/Jedis/Log/easylogging++.cc.o
-
-home/jmx/project/Jedis/Log/easylogging++.i: home/jmx/project/Jedis/Log/easylogging++.cc.i
-
-.PHONY : home/jmx/project/Jedis/Log/easylogging++.i
-
-# target to preprocess a source file
-home/jmx/project/Jedis/Log/easylogging++.cc.i:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/home/jmx/project/Jedis/Log/easylogging++.cc.i
-.PHONY : home/jmx/project/Jedis/Log/easylogging++.cc.i
-
-home/jmx/project/Jedis/Log/easylogging++.s: home/jmx/project/Jedis/Log/easylogging++.cc.s
-
-.PHONY : home/jmx/project/Jedis/Log/easylogging++.s
-
-# target to generate assembly for a file
-home/jmx/project/Jedis/Log/easylogging++.cc.s:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/home/jmx/project/Jedis/Log/easylogging++.cc.s
-.PHONY : home/jmx/project/Jedis/Log/easylogging++.cc.s
-
-jedis.o: jedis.cc.o
-
-.PHONY : jedis.o
+.PHONY : testEventLoop.o
 
 # target to build an object file
-jedis.cc.o:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/jedis.cc.o
-.PHONY : jedis.cc.o
+testEventLoop.cc.o:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/testEventLoop.cc.o
+.PHONY : testEventLoop.cc.o
 
-jedis.i: jedis.cc.i
+testEventLoop.i: testEventLoop.cc.i
 
-.PHONY : jedis.i
+.PHONY : testEventLoop.i
 
 # target to preprocess a source file
-jedis.cc.i:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/jedis.cc.i
-.PHONY : jedis.cc.i
+testEventLoop.cc.i:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/testEventLoop.cc.i
+.PHONY : testEventLoop.cc.i
 
-jedis.s: jedis.cc.s
+testEventLoop.s: testEventLoop.cc.s
 
-.PHONY : jedis.s
+.PHONY : testEventLoop.s
 
 # target to generate assembly for a file
-jedis.cc.s:
-	$(MAKE) -f CMakeFiles/jedis.dir/build.make CMakeFiles/jedis.dir/jedis.cc.s
-.PHONY : jedis.cc.s
+testEventLoop.cc.s:
+	$(MAKE) -f CMakeFiles/testEventLoop.dir/build.make CMakeFiles/testEventLoop.dir/testEventLoop.cc.s
+.PHONY : testEventLoop.cc.s
 
 # Help Target
 help:
@@ -212,16 +266,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... jedis"
+	@echo "... testEventLoop"
+	@echo "... Event.o"
+	@echo "... Event.i"
+	@echo "... Event.s"
+	@echo "... EventLoop.o"
+	@echo "... EventLoop.i"
+	@echo "... EventLoop.s"
+	@echo "... Poller.o"
+	@echo "... Poller.i"
+	@echo "... Poller.s"
 	@echo "... Socket.o"
 	@echo "... Socket.i"
 	@echo "... Socket.s"
-	@echo "... home/jmx/project/Jedis/Log/easylogging++.o"
-	@echo "... home/jmx/project/Jedis/Log/easylogging++.i"
-	@echo "... home/jmx/project/Jedis/Log/easylogging++.s"
-	@echo "... jedis.o"
-	@echo "... jedis.i"
-	@echo "... jedis.s"
+	@echo "... testEventLoop.o"
+	@echo "... testEventLoop.i"
+	@echo "... testEventLoop.s"
 .PHONY : help
 
 

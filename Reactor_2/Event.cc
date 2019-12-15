@@ -36,3 +36,15 @@ FileEvent::EnableWriting()
   mask_ = mask_ | AE_WRITABLE;
   loop_->RegisterFileEvent(shared_from_this());
 }
+void 
+FileEvent::DisableReading()
+{
+  mask_ = mask_ & (!AE_READABLE);
+}
+
+void 
+FileEvent::DisableWriting()
+{
+  mask_ = mask & (!AE_WRITABLE);
+}
+

@@ -1,0 +1,4 @@
+/home/jmx/project/Jedis/RedisServer_0.5/tmp_build/CMakeFiles/edit_cache.dir
+/home/jmx/project/Jedis/RedisServer_0.5/tmp_build/CMakeFiles/rebuild_cache.dir
+/home/jmx/project/Jedis/RedisServer_0.5/tmp_build/CMakeFiles/echoStringServer.dir
+/home/jmx/project/Jedis/RedisServer_0.5/tmp_build/CMakeFiles/jedis.dir

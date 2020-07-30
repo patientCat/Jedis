@@ -11,6 +11,7 @@
 using namespace std;
 using namespace std::placeholders;
 using namespace Jedis;
+
 class JedisServer
 {
 public:
@@ -39,7 +40,7 @@ public:
     conn->Send(reply.str().data(), reply.str().size());
   }
 
-  void init()
+ void init()
   {
     // 信号忽略
     // TODO

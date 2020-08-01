@@ -4,7 +4,7 @@
 
 #include "JPubSubDict.hh"
 #include "../JCommand.hh"
-#include "../Current.hh"
+#include "../JCurrent.hh"
 
 #include <vector>
 #include "../JParams.hh"

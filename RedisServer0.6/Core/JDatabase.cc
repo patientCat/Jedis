@@ -4,12 +4,17 @@
 #include "JDatabase.hh"
 #include "muduo/base/Logging.h"
 #include <iostream>
+#include <vector>
 
 using namespace Jedis;
 
 // 静态成员变量必须在类外初始化，定义即分配空间
 std::once_flag JDataBase::flag1{};
 JDataBase *JDataBase::instance{};
+
+using namespace std;
+using namespace muduo;
+using namespace muduo::net;
 
 void 
 JDataBase::setValue(const JString& key, JObject &&value, JObject::JDataType type)
@@ -58,4 +63,11 @@ JDataBase::getValueByType(const JString& key, JObject *&value, JObject::JDataTyp
   else{
     return JError::JError_KeyNotExist;
   }
+}
+
+void
+JDataBase::addConnectionInWatchedKeys(const JString& key, const std::shared_ptr<muduo::net::TcpConnection> &conn)
+{
+  // 针对每一个key，将conn插入。
+    watched_keys_[key].insert(conn);
 }

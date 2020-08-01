@@ -36,8 +36,14 @@ JCommandHandler publish;
 JCommandHandler multi;
 JCommandHandler exec;
 JCommandHandler watch;
+JCommandHandler unwatch;
+JCommandHandler discard;
 
-enum class JCommandAttr{READ,  WRITE};
+enum class JCommandAttr
+{
+  READ,
+  WRITE
+};
 
 struct JCommandInfo
 {
@@ -85,44 +91,7 @@ public:
       command_handler_map_[command_info_vec_[i].cmd_name] = &command_info_vec_[i]; 
     }
   }
-  static void executeCommand(const std::vector<JString> &stringVec, ReplyType &reply)
-  {
-    LOG_INFO << "executeCommand" ;
-    LOG_TRACE << "param size = " << stringVec.size();
-    if(stringVec.empty())
-      return;
-    auto cmd = stringVec[0];
-    // 获取命令信息
-    auto command_info = getCommandHandlerMap(cmd);
-    JError err;
-
-    // 检查命令参数
-    if((err = checkCommand(command_info, stringVec, reply)) 
-        != JError_OK)
-    {
-      reply.setReply(err); 
-      return ;
-    }
-
-
-    if(false/*开启了事务*/)
-    {
-      // 这里就将命令stringVec存起来。存到一个队列中去。
-    }else{
-      // 将命令和params分离
-      auto iter = std::next(stringVec.begin());
-      std::vector<std::string> params(iter, stringVec.end());
-
-      err = command_info->handler(params, reply);
-      if(err == JError_OK && command_info->attr == JCommandAttr::READ)
-      {
-        return;
-      }
-      reply.setReply(err); 
-    }
-
-    return ;
-  }
+  static void executeCommand(const std::vector<JString> &stringVec, ReplyType &reply);
 
   // get commandinfo
   static JCommandInfo* getCommandHandlerMap(const JString &key)

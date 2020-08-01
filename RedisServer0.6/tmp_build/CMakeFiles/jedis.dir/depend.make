@@ -45,8 +45,8 @@ CMakeFiles/jedis.dir/Core/Object/JString.cc.o: ../Core/Object/JString.hh
 
 CMakeFiles/jedis.dir/Core/PubSub/JPubSubDict.cc.o: ../Core/./Object/JObject.hh
 CMakeFiles/jedis.dir/Core/PubSub/JPubSubDict.cc.o: ../Core/./Object/JString.hh
-CMakeFiles/jedis.dir/Core/PubSub/JPubSubDict.cc.o: ../Core/Current.hh
 CMakeFiles/jedis.dir/Core/PubSub/JPubSubDict.cc.o: ../Core/JCommand.hh
+CMakeFiles/jedis.dir/Core/PubSub/JPubSubDict.cc.o: ../Core/JCurrent.hh
 CMakeFiles/jedis.dir/Core/PubSub/JPubSubDict.cc.o: ../Core/JError.hh
 CMakeFiles/jedis.dir/Core/PubSub/JPubSubDict.cc.o: ../Core/JParams.hh
 CMakeFiles/jedis.dir/Core/PubSub/JPubSubDict.cc.o: ../Core/JReply.hh
@@ -56,8 +56,10 @@ CMakeFiles/jedis.dir/Core/PubSub/JPubSubDict.cc.o: ../Core/PubSub/Topic.hh
 
 CMakeFiles/jedis.dir/Core/Transaction/Transaction.cc.o: ../Core/./Object/JObject.hh
 CMakeFiles/jedis.dir/Core/Transaction/Transaction.cc.o: ../Core/./Object/JString.hh
-CMakeFiles/jedis.dir/Core/Transaction/Transaction.cc.o: ../Core/Current.hh
+CMakeFiles/jedis.dir/Core/Transaction/Transaction.cc.o: ../Core/./Transaction/Transaction.hh
 CMakeFiles/jedis.dir/Core/Transaction/Transaction.cc.o: ../Core/JCommand.hh
+CMakeFiles/jedis.dir/Core/Transaction/Transaction.cc.o: ../Core/JConnectionContext.hh
+CMakeFiles/jedis.dir/Core/Transaction/Transaction.cc.o: ../Core/JCurrent.hh
 CMakeFiles/jedis.dir/Core/Transaction/Transaction.cc.o: ../Core/JError.hh
 CMakeFiles/jedis.dir/Core/Transaction/Transaction.cc.o: ../Core/JReply.hh
 CMakeFiles/jedis.dir/Core/Transaction/Transaction.cc.o: ../Core/Transaction/Transaction.cc
@@ -65,11 +67,13 @@ CMakeFiles/jedis.dir/Core/Transaction/Transaction.cc.o: ../Core/Transaction/Tran
 
 CMakeFiles/jedis.dir/jedis.cc.o: .././Core/./Object/JObject.hh
 CMakeFiles/jedis.dir/jedis.cc.o: .././Core/./Object/JString.hh
-CMakeFiles/jedis.dir/jedis.cc.o: .././Core/Current.hh
+CMakeFiles/jedis.dir/jedis.cc.o: .././Core/./Transaction/Transaction.hh
 CMakeFiles/jedis.dir/jedis.cc.o: .././Core/JCommand.hh
+CMakeFiles/jedis.dir/jedis.cc.o: .././Core/JConnectionContext.hh
+CMakeFiles/jedis.dir/jedis.cc.o: .././Core/JCurrent.hh
 CMakeFiles/jedis.dir/jedis.cc.o: .././Core/JError.hh
 CMakeFiles/jedis.dir/jedis.cc.o: .././Core/JReply.hh
-CMakeFiles/jedis.dir/jedis.cc.o: ../JedisServer.hh
-CMakeFiles/jedis.dir/jedis.cc.o: ../TelnetCodec.hh
+CMakeFiles/jedis.dir/jedis.cc.o: .././Core/JedisServer.hh
+CMakeFiles/jedis.dir/jedis.cc.o: .././Core/TelnetCodec.hh
 CMakeFiles/jedis.dir/jedis.cc.o: ../jedis.cc
 

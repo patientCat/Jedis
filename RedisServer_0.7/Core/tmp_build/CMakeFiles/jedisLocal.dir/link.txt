@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++17 -g -pthread    CMakeFiles/jedisLocal.dir/jedisLocal.cc.o CMakeFiles/jedisLocal.dir/Jedis.cc.o CMakeFiles/jedisLocal.dir/JString.cc.o  -o ../bin/jedisLocal 

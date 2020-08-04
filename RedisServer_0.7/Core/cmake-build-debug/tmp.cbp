@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tmp"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/mac/Downloads/tmp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/mac/Downloads/tmp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/mac/Downloads/tmp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tmp">
+				<Option output="/Users/mac/Downloads/tmp/cmake-build-debug/tmp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mac/Downloads/tmp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/mac/Downloads/tmp/."/>
+					<Add directory="/Users/mac/Downloads/tmp/JObject"/>
+					<Add directory="/Users/mac/Downloads/tmp/PubSub"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 tmp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tmp/fast">
+				<Option output="/Users/mac/Downloads/tmp/cmake-build-debug/tmp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mac/Downloads/tmp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/mac/Downloads/tmp/."/>
+					<Add directory="/Users/mac/Downloads/tmp/JObject"/>
+					<Add directory="/Users/mac/Downloads/tmp/PubSub"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 tmp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mac/Downloads/tmp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/mac/Downloads/tmp/CMakeLists.txt">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/Current.h">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JCast.hh">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JCommand.cc">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JCommand.hh">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JError.hh">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JObject/JList.cc">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JObject/JList.hh">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JObject/JObject.hh">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JObject/JString.cc">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JObject/JString.hh">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JParams.hh">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JReply.cc">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/JReply.hh">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/Jedis.cc">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/Jedis.hh">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/PubSub/JPubSubDict.cc">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/PubSub/JPubSubDict.hh">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/PubSub/Topic.hh">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/test_any_cast.cc">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/test_call_once.cc">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/test_string_view.cc">
+			<Option target="tmp"/>
+		</Unit>
+		<Unit filename="/Users/mac/Downloads/tmp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
